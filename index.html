@@ -116,7 +116,7 @@
     </style>
 </head>
 <body>
-    <audio autoplay loop>
+    <audio id="birthdayAudio" loop>
         <source src="bryanfull.MP3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
@@ -138,5 +138,12 @@
         <h1>Chúc Mừng Sinh Nhật!</h1>
         <p>Chúc cậu tuổi mới mạnh khỏe đẹp trai sống lâu trăm tuổi</p>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var audio = document.getElementById('birthdayAudio');
+            audio.volume = 0.5; // Đặt âm lượng thành 40%
+            audio.play();
+        });
+    </script>
 </body>
 </html>
